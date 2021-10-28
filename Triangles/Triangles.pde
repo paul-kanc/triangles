@@ -6,7 +6,7 @@ void setup()
   
   int xPos = -94;
   int yPos = -20;
-  int size = 100;  //needs to be multiple of display window height and width
+  int size = 100;
   color fill = color(100, 0, 255);  //base color of the triangles
   
   while (yPos < height) {  //loop to create triangles
