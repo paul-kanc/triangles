@@ -4,8 +4,8 @@ void setup()
   noSmooth();
   background(255, 255, 255);
   
-  int xPos = -94;
-  int yPos = -20;
+  int xPos = 0;
+  int yPos = 0;
   int size = 100;
   color fill = color(100, 0, 255);  //base color of the triangles
   
@@ -35,7 +35,7 @@ void setup()
     xPos = xPos + size * 2;  //draws the next set of 8 triangles
     
     if (xPos > width) {  //moves to the next row once one is complete
-      xPos = -94;
+      xPos = 0;
       yPos = yPos + size * 2;
     }
   }
@@ -43,5 +43,5 @@ void setup()
 
 void draw() 
 {
-  save("trinagles.png");
+  save("trinagles.png"); // save the result as an image called "trinagles.png" in the sketch folder
 }
